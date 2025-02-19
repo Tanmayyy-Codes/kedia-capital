@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kedia Capital News Delivery </title>
+</head>
+<body>
+  <h1> Welcome to {{company_name}} Actionable news delivery</h1>
+  <p>Here are the trending news of the day:</p>
+  <ul>
+      <li>🚀 SpaceX successfully launches Starship for orbital test flight.</li>
+      <li>📉 Global markets see a decline amid economic uncertainty.</li>
+      <li>🎮 New gaming console announced with groundbreaking features.</li>
+      <li>🏆 Football World Cup qualifiers: Exciting matches ahead.</li>
+      <li>🌎 Climate summit discusses urgent steps for global warming.</li>
+  </ul>
+
+
+<h2> Job Openings </h2>
+  <!-- {{jobs}} -->
+
+  {% for job in jobs %}
+    {% include 'jobitem.html'%}
+  {% endfor %}
+</body>
+</html>
